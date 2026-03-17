@@ -1,0 +1,209 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="756,1689" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd2:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="525,1666" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Chrome Flats, Houses, Apartments for Rent, Bu" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="491,1583" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="7bf5b5b7-c442-40ea-b09f-54e28dbf628d" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="489,1389" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="[UiPath.UIAutomationNext.Enums.NTypeByClipboardMode.WhenPossible]" DisplayName="Type Into 'INPUT listPageSearchLoc…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="455,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="7bf5b5b7-c442-40ea-b09f-54e28dbf628d" Text="Sholinganallur,Chennai,Tamil Nadu,India" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="nobroker.in/chennai/rent" CVScreenId="967d1ddb-2bb9-4ee6-8e00-70dd747db22f" ContentHash="X7lhT1MYf0q5_-DnWOZs3Q" CvElementArea="410, 422, 528, 50" CvType="InputBox" DesignTimeRectangle="413, 422, 525, 50" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='listPageSearchLocality' tag='INPUT' /&gt;" Guid="87237358-a899-48b9-8fb7-66be1f6961a8" InformativeScreenshot="34f27f726e8d7906bc1a8e4fdc3b5be8.png" Reference="t4EGLLNIOUqoC2lgTDo4vA/C-TbfMdPlk6lL3ducaQU6w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flats, Houses, Apartments for Rent, Buy, Sale Without Brokerage in India' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Sholinganallur, Chennai…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="455,198" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7bf5b5b7-c442-40ea-b09f-54e28dbf628d" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="nobroker.in" CVScreenId="e60a8c2d-5d79-42ad-a211-3a0ed18d061e" ContentHash="A_qlYyM8fU6slZAImHIzhA" CvTextArea="499, 401, 206, 13" CvTextArgument="Sholinganallur, Chennai, Tamil Nadu, India" CvType="Text" DesignTimeRectangle="501, 397, 374, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='autocomplete-dropdown-container' tag='DIV' /&gt;" Guid="827fd27b-d9f7-44d6-af79-789f43e6e0e7" InformativeScreenshot="a7a0b3f4b53b3809f748a63ad550c9f4.png" Reference="t4EGLLNIOUqoC2lgTDo4vA/IDsubEe9HEyv1Zy_AddNHw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flats, Houses, Apartments for Rent, Buy, Sale Without Brokerage in India' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="455,198" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7bf5b5b7-c442-40ea-b09f-54e28dbf628d" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="nobroker.in" CVScreenId="3e954635-78f5-4731-b162-7d272d530d97" ContentHash="63XvvJGB9ECNoO7KA8tOEQ" CvElementArea="886, 395, 139, 42" CvTextArea="943, 409, 42, 13" CvTextArgument="Search" CvType="Button" DesignTimeRectangle="887, 396, 137, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Search' parentid='app' tag='BUTTON' /&gt;" Guid="a63458a4-b7df-4b83-95ec-df5d998027fb" InformativeScreenshot="660b422d99c6d5ee7f9a66dc9b0fe0c2.png" Reference="t4EGLLNIOUqoC2lgTDo4vA/-Accy2hOTEu5gO8_cEEPPQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flats, Houses, Apartments for Rent, Buy, Sale Without Brokerage in India' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="455,127" sap2010:WorkflowViewState.IdRef="Delay_3" />
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Flats, Houses, Apartments for Rent, Buy, Sale Without Brokerage in India" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="455,552" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" InteractionMode="DebuggerApi" IsDisplayNameAuto="True" ScopeGuid="0d617beb-c692-40c3-ac70-a39391f897b8" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="453,354" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='House'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Rent'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Deposit'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column3' Name='Builtup'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Apartment type'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column0' attr='fulltext'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='section' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;webctrl tag='h2' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column1' attr='fulltext'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='fulltext'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column3' attr='fulltext'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='fulltext'&gt;&lt;webctrl tag='article' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="419,147" sap2010:WorkflowViewState.IdRef="NExtractData_5" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="0d617beb-c692-40c3-ac70-a39391f897b8" Version="V5">
+                        <uix:NExtractData.Target>
+                          <uix:TargetAnchorable BrowserURL="https://www.nobroker.in/property/rent/chennai/Sholinganallur?searchParam=W3sibGF0IjoxMi45MDA5ODc3LCJsb24iOjgwLjIyNzkzMDEsInBsYWNlSWQiOiJDaElKR3poXzNubGJVam9SR3pfLWl0UXR1XzgiLCJwbGFjZU5hbWUiOiJTaG9saW5nYW5hbGx1ciJ9XQ==&amp;radius=2.0&amp;sharedAccomodation=0&amp;city=chennai&amp;locality=Sholinganallur#signup-login" DesignTimeRectangle="549, 69, 360, 5793" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;main&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='listCardContainer' tag='DIV' /&gt;" Guid="6e2e7afd-cabc-4dca-8b27-4df041770d4a" InformativeScreenshot="2ba08123103662d9968aef7417c21097.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Flats, Houses, Apartments for Rent, Buy, Sale Without Brokerage in India' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NExtractData.Target>
+                      </uix:NExtractData>
+                      <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="419,143" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Sheet1" WorkbookPath="Rent options in sholinganallur.xlsx" />
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.OCREngine>
+                  <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                    <ActivityFunc.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                    </ActivityFunc.Argument>
+                  </ActivityFunc>
+                </uix:NApplicationCard.OCREngine>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL6SURBVFhHxVfNaxNREM8/4NGDHrQoKCpe9NAmRFirAUFPKSkEWnrQi9JTCyIIIpSCXnopgl5EEBQCHrT0IFQPghTqQQh+FKm1ECXBFKUEFMLuG/nNupvdefvxbCw78CNh3uzM2/n4vbe5nKF82Hty9/pA/mbj4KmF1uHTb74fObPRPnq2CeA/dFiDDWzl89uWtX1DQ3C8eazUtgfLZALY4hk8K/0Zy/s9J3ZtHCjWfh4/15EBTIFn4QO+pP9E+bw/X/h2yFqVDrcL+IJPGSdS1gcKF1BX6aRfwCd8y3ghwS53IrgH+I7NBOqUmPb8iK6TGB4juzJJtlXV1/4CMSJ7As0ijT049x6TevBE0/uwqqQWXhB1u0StNv+qR8/ILlR028EyIVYoOMYlqdudi9fYqXP1trYGqOeviL58Jbt82bUfnyba/OFuIsIesUIjipmVRhLOzDzRr99uioNr5y8RxLlyQ7fvdskujmq+AMTk4GAtU5LBG/GbBmrMb0vEGwnactagL01ofgDEZMYEdcrFWORHSC2/JbX0uqezqm55bt0N2aJnUIak5kVso/SHUJogajTJmbvv6/Af5cEmkBHnzkMi2ybn+pz+fABcBhwiciEVlUmirU6o7mhQtVLnEiFLsieigNg5nGRywQTO1KybYlH7fwFi5/phPqRa1VdjOz0NiN3XBgA0pHq6pOlNwBswLoFV5TpjvtFoQT3qHmxKU3AJTJqQZxrM9nHNZb2tDqmXy73URzSlCbgJU8dweMwNWFvs6cB+2FDgfEB2YKcxZQJ4DNOIiLvdtt2TLqjHrDeaIR2TD5hS2MaBiSiNikEmzOmC0UA6PIZBezDlSp15QNpL+FScehgh3WC1mfmerjhK6t0n7gfNHkzZaseehB78w8joOMbb4oyvLXK3Y/Y5/TEk5B/fU7PaGqAdx5CkCwk7HZ/mt8LFg0cu4dbD9piIGILSLiSQ1CvZf0LslQyS6aXUk0yv5Z5k+mHiSaafZkHJ7ONUyk59nv8Bz2B/YO0ijuUAAAAASUVORK5CYII=" InformativeScreenshot="1c3c6dce5488b80dcc2d6f785d986ce8.jpg" Selector="&lt;html app='chrome.exe' title='Flats, Houses, Apartments for Rent, Buy, Sale Without Brokerage in India' /&gt;" Url="https://www.nobroker.in/property/rent/chennai/Sholinganallur?searchParam=W3sibGF0IjoxMi45MDA5ODc3LCJsb24iOjgwLjIyNzkzMDEsInBsYWNlSWQiOiJDaElKR3poXzNubGJVam9SR3pfLWl0UXR1XzgiLCJwbGFjZU5hbWUiOiJTaG9saW5nYW5hbGx1ciJ9XQ==&amp;radius=2.0&amp;sharedAccomodation=0&amp;city=chennai&amp;locality=Sholinganallur#signup-login" Version="V2">
+                    <uix:TargetApp.Arguments>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:TargetApp.Arguments>
+                    <uix:TargetApp.WorkingDirectory>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:TargetApp.WorkingDirectory>
+                  </uix:TargetApp>
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Chrome" ContentHash="-u0a7PVVyUSVxJcmkzLrcw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAL6SURBVFhHxVfNaxNREM8/4NGDHrQoKCpe9NAmRFirAUFPKSkEWnrQi9JTCyIIIpSCXnopgl5EEBQCHrT0IFQPghTqQQh+FKm1ECXBFKUEFMLuG/nNupvdefvxbCw78CNh3uzM2/n4vbe5nKF82Hty9/pA/mbj4KmF1uHTb74fObPRPnq2CeA/dFiDDWzl89uWtX1DQ3C8eazUtgfLZALY4hk8K/0Zy/s9J3ZtHCjWfh4/15EBTIFn4QO+pP9E+bw/X/h2yFqVDrcL+IJPGSdS1gcKF1BX6aRfwCd8y3ghwS53IrgH+I7NBOqUmPb8iK6TGB4juzJJtlXV1/4CMSJ7As0ijT049x6TevBE0/uwqqQWXhB1u0StNv+qR8/ILlR028EyIVYoOMYlqdudi9fYqXP1trYGqOeviL58Jbt82bUfnyba/OFuIsIesUIjipmVRhLOzDzRr99uioNr5y8RxLlyQ7fvdskujmq+AMTk4GAtU5LBG/GbBmrMb0vEGwnactagL01ofgDEZMYEdcrFWORHSC2/JbX0uqezqm55bt0N2aJnUIak5kVso/SHUJogajTJmbvv6/Af5cEmkBHnzkMi2ybn+pz+fABcBhwiciEVlUmirU6o7mhQtVLnEiFLsieigNg5nGRywQTO1KybYlH7fwFi5/phPqRa1VdjOz0NiN3XBgA0pHq6pOlNwBswLoFV5TpjvtFoQT3qHmxKU3AJTJqQZxrM9nHNZb2tDqmXy73URzSlCbgJU8dweMwNWFvs6cB+2FDgfEB2YKcxZQJ4DNOIiLvdtt2TLqjHrDeaIR2TD5hS2MaBiSiNikEmzOmC0UA6PIZBezDlSp15QNpL+FScehgh3WC1mfmerjhK6t0n7gfNHkzZaseehB78w8joOMbb4oyvLXK3Y/Y5/TEk5B/fU7PaGqAdx5CkCwk7HZ/mt8LFg0cu4dbD9piIGILSLiSQ1CvZf0LslQyS6aXUk0yv5Z5k+mHiSaafZkHJ7ONUyk59nv8Bz2B/YO0ijuUAAAAASUVORK5CYII=" InformativeScreenshot="8b1379e824cc05e059f244f72490a4bc.jpg" Reference="t4EGLLNIOUqoC2lgTDo4vA/e_PnZaCO8k2_RfFRFpqN7A" Selector="&lt;html app='chrome.exe' title='Flats, Houses, Apartments for Rent, Buy, Sale Without Brokerage in India' /&gt;" Url="https://www.nobroker.in/chennai/rent" Version="V2" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
